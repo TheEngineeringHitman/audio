@@ -17,7 +17,7 @@ y|yes )
 	if [[ $(whoami) = "root" ]]; then
 		echo "Would you like to update the sources list before continuing? (y/n)>"
 		read sources
-		echo "Would you like to perform a dist-upgrade before continuting? (y/n)>"
+		echo "Would you like to perform a dist-upgrade before continuing? (y/n)>"
 		read upgr
 		echo "Would you like to perform autoremove to get rid of old/unused packages before continuing? (y/n)>"
 		read autor
