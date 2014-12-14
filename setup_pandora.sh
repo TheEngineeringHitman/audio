@@ -9,7 +9,7 @@ echo "## www.inistructables.com/id/Pandoras-Box-An-Internet-Radio-player-made-wi
 echo "################################################"
 
 shopt -s nocasematch
-echo -e "\nThis script will setup pianobar which will allow you to play pandora from your pi."
+echo -e "\nThis script will setup pianobar which will allow you to play pandora from your Pi."
 echo "Would you like to continue? (y/n)>"
 read answer
 case "$answer" in
@@ -48,7 +48,7 @@ y|yes )
 			echo "Skipping autremove..."
 			;;
 		esac
-		echo "Would you like piano bar to automaticaly log you in when it starts? (y/n)>"
+		echo "Would you like piano bar to automatically log you in when it starts? (y/n)>"
 		read answer
 		case "$answer" in
 		y|yes )
