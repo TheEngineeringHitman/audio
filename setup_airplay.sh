@@ -69,7 +69,7 @@ y|yes )
 		chmod a+x /etc/init.d/shairport
 		update-rc.d shairport defaults
 		cd $orig_dir
-		echo "Airplay should now be available as "$air_name"."
+		echo "Setup complete. Airplay should be available as "$air_name" after a reboot."
 	else
 		echo "This script must be run as root. Please try again using sudo."
 	fi
