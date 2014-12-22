@@ -70,6 +70,17 @@ y|yes )
 		update-rc.d shairport defaults
 		cd $orig_dir
 		echo "Setup complete. Airplay should be available as "$air_name" after a reboot."
+		echo "Would you like to reboot now? (y/n)>"
+		read autoreboot
+		case "$autoreboot" in
+		y|yes )
+			echo "System rebooting..."
+			shutdown -r now
+			;;
+		* )
+			echo "Skipping reboot. Please remember that you will need to reboot before shairport is functional."
+			;;
+		esac
 	else
 		echo "This script must be run as root. Please try again using sudo."
 	fi
