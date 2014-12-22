@@ -51,8 +51,8 @@ y|yes )
 			esac
 			;;
 		esac
-		echo "Would you like to install pandora from the debian repositories or compile from binaries? Press r for repos or b for bin. >"
-		read compFromBin
+		echo "Would you like to install pandora from the debian repositories or compile from source? Press r for repos or c for compile. >"
+		read compFromSrc
 		case "$sources" in
 		y|yes )
 			echo "Performing update to sources list..."
@@ -80,9 +80,9 @@ y|yes )
 			echo "Skipping autremove..."
 			;;
 		esac
-		case "$compFromBin" in
-		b )
-			echo "Installing from binaries. This will take about 15-20 minutes."
+		case "$compFromSrc" in
+		c )
+			echo "Installing from source. This will take about 15-20 minutes."
 			apt-get -y -q install git libao-dev libgcrypt11-dev libgnutls-dev libfaad-dev libmad0-dev libjson0-dev make pkg-config
 			git clone https://github.com/FFmpeg/FFmpeg.git
 			cd FFmpeg
