@@ -4,10 +4,11 @@ echo "################################################"
 echo "## Script: setup_pandora.sh"
 echo "## By: Andrew Herren"
 echo "## Date: 11/13/2014"
+echo "## Script instructions: http://www.theengineeringhitman.com/setting-raspbe…ndora-receiver/"
 echo "## This script is based on an instructable by Ayy that can be found at:"
 echo "## www.inistructables.com/id/Pandoras-Box-An-Internet-Radio-player-made-with/step3/Installing-Pianobar/"
-echo "## and a blog post by lanmaster found at:
-echo "## www.lanmaster53.com/2014/05/raspberry-pi-pianobar
+echo "## and a blog post by lanmaster found at:"
+echo "## www.lanmaster53.com/2014/05/raspberry-pi-pianobar"
 echo "################################################"
 
 cur_dir=$pwd
